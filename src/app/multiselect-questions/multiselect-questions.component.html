@@ -1,0 +1,21 @@
+<form [formGroup]="form" (submit)="submit()">
+  <select class="form-select" name="select" formControlName="language">
+    <option [ngValue]="null" disabled>Languages</option>
+    @for (topic of topics$ | async; track topic.name){
+    <option>
+      {{ topic.name }}
+    </option>
+    }
+  </select>
+  <select class="form-select" name="select" formControlName="topic">
+    <option [ngValue]="null" disabled>Topics</option>
+    @for (topic of topicsByLanguage;track topic.name){
+    <option>
+      {{ topic.name }}
+    </option>
+    }
+  </select>
+  <button *ngIf="this.form.valid" type="submit">Submit</button>
+</form>
+
+<div *ngIf="form.valid">{{ form.value | json }}</div>

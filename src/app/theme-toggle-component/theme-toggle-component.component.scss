@@ -1,0 +1,15 @@
+.btn-secondary {
+  /* Base button styles */
+  background-color: #ccc;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dark-theme .btn-secondary {
+  /* Dark theme button styles */
+  background-color: #333;
+  color: #fff;
+  border-color: #555;
+}

@@ -1,0 +1,30 @@
+<form [formGroup]="form" (submit)="submit()">
+  <select name="select" formControlName="country">
+    <option [ngValue]="null" disabled>Countries</option>
+    @for (country of countries$ | async; track country.name){
+    <option>
+      {{ country.name }}
+    </option>
+    }
+  </select>
+  <select name="select" formControlName="province">
+    <option [ngValue]="null" disabled>Provinces</option>
+    @for (province of provincesByCountry;track province.name){
+    <option>
+      {{ province.name }}
+    </option>
+    }
+  </select>
+  <select name="select" formControlName="city">
+    <option [ngValue]="null" disabled>Cities</option>
+    @for (city of citiesByProvince; track city){
+    <option>
+      {{ city }}
+    </option>
+    }
+  </select>
+
+  <button *ngIf="this.form.valid" type="submit">Submit</button>
+</form>
+
+<div *ngIf="form.valid">{{ form.value | json }}</div>
