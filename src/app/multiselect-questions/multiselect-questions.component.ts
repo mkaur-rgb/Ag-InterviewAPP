@@ -43,11 +43,11 @@ export class MultiselectQuestionsComponent {
   submit() {
     alert(JSON.stringify(this.form.value));
   }
-  // clearForm() {
-  //   this.form.reset();
-  //   this.form.patchValue({
-  //     language: null,
-  //     topic: null,
-  //   });
-  // }
+  clearForm() {
+    this.form.reset();
+    this.form.patchValue({
+      language: null,
+      topic: null,
+    });
+  }
 }

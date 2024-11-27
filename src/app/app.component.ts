@@ -1,5 +1,5 @@
 import { Component, TemplateRef, ViewChild } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { BehaviorSubject, Observable, filter, of, switchMap } from 'rxjs';
 import { FormControl } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
@@ -7,6 +7,7 @@ import { ThemeToggleComponent } from '../app/theme-toggle-component/theme-toggle
 import { CommonModule } from '@angular/common';
 import { MultiselectQuestionsComponent } from './multiselect-questions/multiselect-questions.component';
 import { MultiselectComponent } from './multiselect-language-topic/multiselect-language-topic.component';
+import { QuestionCountComponent } from './question-count/question-count.component';
 
 @Component({
   selector: 'app-root',
@@ -17,8 +18,9 @@ import { MultiselectComponent } from './multiselect-language-topic/multiselect-l
     FormsModule,
     MultiselectQuestionsComponent,
     MultiselectComponent,
+    QuestionCountComponent,
+    RouterModule,
   ],
-  template: ` <app-multiselect /> `,
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

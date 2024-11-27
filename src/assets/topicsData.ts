@@ -23,16 +23,27 @@ export const topicsByLanguage: Language[] = [
   },
   {
     name: 'Javascript',
-    topics: [{ name: 'Roma' }, { name: 'Milán' }, { name: 'Nápoles' }],
+    topics: [
+      { name: 'Basics & Intro' },
+      { name: 'Design' },
+      { name: 'Advanced Concepts' },
+    ],
   },
   {
     name: 'Angular',
     topics: [
       {
-        name: 'Berlín',
+        name: 'Basics & Overview',
       },
-      { name: 'Hamburgo' },
-      { name: 'Múnich' },
+      { name: 'Components' },
+      { name: 'Directives' },
+      { name: 'Pipe' },
+      { name: 'Services' },
+      { name: 'Routing' },
+      { name: 'RxJs' },
+      { name: 'Compiler' },
+      { name: 'State Management' },
+      { name: 'Observables' },
     ],
   },
 ];

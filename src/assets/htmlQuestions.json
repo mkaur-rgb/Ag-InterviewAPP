@@ -1,0 +1,34 @@
+[
+  {
+    "title": "What is HTML5 Semantic Elements?",
+    "description": "HTML5 semantic elements are elements that clearly describe their meaning to both the browser and the developer. These elements include: <article>, <aside>, <details>, <figcaption>, <figure>, <footer>, <header>, <main>, <mark>, <nav>, <section>, <summary>, and <time>."
+  },
+  {
+    "title": "New form elements in Html 5",
+    "description": "datalist, output, keygen, progress, and meter"
+  },
+  {
+    "title": "Block-level Elements",
+    "description": "A block-level element always takes up the full width available. Two commonly used block elements are: <p> and <div>.\n\nOther block-level elements include: <address>, <article>, <aside>, <blockquote>, <canvas>, <dd>, <div>, <dl>, <dt>, <fieldset>, <figcaption>, <figure>, <footer>, <form>, <h1>-<h6>, <header>, <hr>, <li>, <main>, <nav>, <noscript>, <ol>, <p>, <pre>, <section>, <table>, <tfoot>, <ul>, and <video>."
+  },
+  {
+    "title": "non-semantic elements",
+    "description": "non-semantic elements: <div> and <span> - Tells nothing about its content."
+  },
+  {
+    "title": "Inline Elements",
+    "description": "An inline element only takes up as much width as necessary.<p><a><abbr><acronym><b><bdo><big><br><button><cite><code><dfn><em><i><img><input><kbd> <label><map><object><output><q><samp><script><select><small><span><strong><sub><sup><textarea><time><tt><var>."
+  },
+  {
+    "title": "New Input Types in HTML5",
+    "description": "color. date. datetime-local. email. month number range search tel time url week."
+  },
+  {
+    "title": "Div in centre align",
+    "description": ".divCenter {\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  transform: translate(-50%, -50%);\n}\n\n<div class=\"divCenter\">\n  center text\n</div>"
+  },
+  {
+    "title": "New Input Types in HTML5",
+    "description": "color. date. datetime-local. email. month number range search tel time url week."
+  }
+]
