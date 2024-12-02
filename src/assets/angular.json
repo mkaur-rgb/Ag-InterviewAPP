@@ -1,0 +1,66 @@
+[
+  {
+    "title": "What are Decorators in angular ?",
+    "description": "Purpose of Angular decorators is to store metadata about a class, method, or property. It informs angular how to process class or method. There are several types of Decorators: Class Decorators (@Component, @Pipe, @Injectable, @Modules, @Directive), Method Decorators (HostListeners), Property Decorators (Input, Output), and Parameter Decorators (@Inject)."
+},
+  {
+    "title": "How Angular is different from JavaScript / jQuery..?",
+    "description": "A major difference between Angular and traditional JavaScript is two-way data binding. In Angular, you can set and get values from a textbox using the `[(ngModel)]` directive, simplifying the process. For example, `<input type=\"text\" [(ngModel)]=\"name\" />` will both set and get the value of the `name` variable."
+  },
+  {
+    "title": "key components of Angular?",
+    "description": "Angular has the below key components: Component (the basic building blocks), Modules (logical pieces of an application), Templates (views), Services (shared functionality), Directives (extra behavior to elements), and Pipes (data formatting)."
+  },
+  {
+    "title": "What are components",
+    "description": "Components are the most basic UI building block of an Angular app, forming a tree of Angular components. They are a subset of directives, but unlike directives, components always have a template and only one component can be instantiated per element in a template."
+},
+  {
+    "title": "Differences between Component and Directive?",
+    "description": "Components: To register a component we use @Component meta-data annotation. Only one component can be present per DOM element. @View decorator or templateUrl/template are mandatory. Directives: To register directives we use @Directive meta-data annotation. Many directives can be used per DOM element. Directives don't use View."
+},
+  {
+    "title": "What is a module",
+    "description": "Modules are logical boundaries in your application. The application is divided into separate modules to separate the functionality. A module groups related components, directives, pipes, and services."
+  },
+  {
+    "title": "What is TypeScript",
+    "description": "TypeScript is a typed superset of JavaScript created by Microsoft that adds optional types, classes, async/await, and many other features, compiling to plain JavaScript. Angular is built entirely in TypeScript and uses it as a primary language."
+},
+  {
+    "title": "What is angular CLI",
+    "description": "Angular CLI is a command-line interface tool that helps you to initialize, develop, scaffold, and maintain Angular applications."
+},
+{
+  "title": "Dependency injection in Angular",
+  "description": "Dependency Injection is a design pattern where a class requests dependencies from external sources rather than creating them itself. In Angular, this means that Angular provides the necessary dependencies to a class, rather than the class creating its dependencies."
+},
+{
+  "title": "What is a bootstrapping module",
+  "description": "Every application has at least one Angular module, the root module that you bootstrap to launch the application is called as bootstrapping module. It is commonly known as AppModule."
+},
+{
+  "title": "What is metadata?",
+  "description": "Metadata is used to decorate a class so that it can configure the expected behavior of the class. Class decorators (@Component, @NgModule), Property decorators (@Input, @Output), Method decorators (@HostListener), and Parameter decorators (@Inject) are used to provide this metadata."
+},
+{
+  "title": "Angular.json file",
+  "description": "A project-specific configuration file for build and development tools provided by the Angular CLI. It configures external CSS and JS, build settings like maximum warnings and errors, port numbers for running the application, and environment file specifications."
+},
+{
+  "title": "tsconfig file",
+  "description": "A TypeScript configuration file specifying compiler options like `skipDefaultLibCheck` to avoid external library checks and `strictNullChecks` to enforce null checks."
+},
+{
+  "title": "tslint.json",
+  "description": "TSLint is an extensible static analysis tool that checks TypeScript code for readability, maintainability, and functionality errors, acting as an automatic code verification tool."
+},
+{
+  "title": "main.ts",
+  "description": "The main.ts file serves as the entry point for Angular applications. It bootstraps the AppModule, which is the root module of the application."
+},
+{
+  "title": "What is safe navigation operator?",
+  "description": "The safe navigation operator (?) guards against null and undefined values in property paths, returning the value if it exists or null otherwise. Example: <p>The user firstName is: {{user?.fullName?.firstName}}</p>"
+}
+]

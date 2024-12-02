@@ -15,13 +15,23 @@ interface Question {
 })
 export class QuestionsComponent {
   questions: Question[] = [];
+  language = '';
+  topic = '';
+  filePath = '';
   constructor(private http: HttpClient) {}
   ngOnInit() {
     this.fetchData();
   }
 
   fetchData() {
-    this.http.get<Question[]>('assets/htmlQuestions.json').subscribe((data) => {
+    console.log(localStorage.getItem('language') + 'Questions1');
+    if (localStorage.getItem('language') === 'HTML') {
+      this.filePath = 'assets/htmlQuestions.json';
+    } else if (localStorage.getItem('language') === 'CSS') {
+    } else if (localStorage.getItem('language') === 'Angular') {
+      this.filePath = 'assets/angular.json';
+    }
+    this.http.get<Question[]>(this.filePath).subscribe((data) => {
       this.questions = data;
     });
   }
