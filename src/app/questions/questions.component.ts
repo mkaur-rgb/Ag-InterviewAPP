@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, SimpleChanges } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
@@ -18,21 +18,28 @@ export class QuestionsComponent {
   language = '';
   topic = '';
   filePath = '';
+  @Input() selectedData: { language: string; topic: string } = {
+    language: '',
+    topic: '',
+  };
   constructor(private http: HttpClient) {}
   ngOnInit() {
     this.fetchData();
   }
-
-  fetchData() {
-    console.log(localStorage.getItem('language') + 'Questions1');
-    if (localStorage.getItem('language') === 'HTML') {
-      this.filePath = 'assets/htmlQuestions.json';
-    } else if (localStorage.getItem('language') === 'CSS') {
-    } else if (localStorage.getItem('language') === 'Angular') {
-      this.filePath = 'assets/angular.json';
+  ngOnChanges(changes: SimpleChanges) {
+    if (changes['selectedData'] && !changes['selectedData'].firstChange) {
+      this.fetchData();
     }
-    this.http.get<Question[]>(this.filePath).subscribe((data) => {
-      this.questions = data;
+  }
+  fetchData() {
+    const filePath = `assets/${this.selectedData.language.toLowerCase()}.json`;
+    this.http.get<Question[]>(filePath).subscribe({
+      next: (data) => {
+        this.questions = data;
+      },
+      error: (error) => {
+        console.error('Error fetching questions:', error);
+      },
     });
   }
 }

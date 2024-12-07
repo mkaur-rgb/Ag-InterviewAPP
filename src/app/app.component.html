@@ -179,7 +179,6 @@
 <div class="container nav-bg">
   <nav class="navbar navbar-dark bg-dark navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
       <button
         class="navbar-toggler"
         type="button"
@@ -231,7 +230,6 @@
           </li>
           <li class="nav-item">
             <app-theme-toggle-component></app-theme-toggle-component>
-            <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
           </li>
         </ul>
         <form class="d-flex" role="search">
@@ -262,7 +260,7 @@
   </div>
 </div>
 <div *ngIf="isSubmitted">
-  <app-questions></app-questions>
+  <app-questions [selectedData]="selectedData"></app-questions>
 </div>
 <router-outlet />
 

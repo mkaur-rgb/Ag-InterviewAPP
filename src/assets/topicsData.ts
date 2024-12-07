@@ -25,7 +25,7 @@ export const topicsByLanguage: Language[] = [
     name: 'Javascript',
     topics: [
       { name: 'Basics & Intro' },
-      { name: 'Design' },
+      { name: 'Intermediate' },
       { name: 'Advanced Concepts' },
     ],
   },

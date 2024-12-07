@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Observable, of } from 'rxjs';
-import { citiesByCountry } from '../../assets/citiesByCountry';
+import { citiesByCountry } from '../../assets/languageTopicsData';
 import { CommonModule } from '@angular/common';
 interface Province {
   name: string;

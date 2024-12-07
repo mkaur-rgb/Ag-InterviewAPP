@@ -1,0 +1,37 @@
+[
+  {
+    "title": "What is css box model",
+    "description": "The CSS Box Model is a box that wraps around every HTML element and consists of: content, padding, border, and margin."
+  },
+  {
+    "title": "what are media queries?",
+    "description": "CSS media queries are used to apply specific styles to different screen sizes and devices. Common breakpoints include extra small (phones, 600px and down), small (tablets, 600px and up), medium (landscape tablets, 768px and up), large (laptops/desktops, 992px and up), and extra large (large laptops/desktops, 1200px and up). Media queries can also target specific orientations (landscape/portrait) and browsers (e.g., IE, Firefox)."
+    },
+  {
+    "title": "Specificity in css - id class inline css execution sequence",
+    "description": "Every selector has its place in the specificity hierarchy. There are four categories defining specificity levels: inline styles, IDs, classes/attributes/pseudo-classes, and elements/pseudo-elements."
+},
+  {
+    "title": "Display: none | inline | block | inline-block;",
+    "description": "The `display` property in CSS controls the type of box an element should be displayed as: `none` (hides the element), `inline` (displays the element as an inline element), `block` (displays the element as a block-level element), and `inline-block` (displays the element as a block-level element within an inline flow)."
+},
+  {
+    "title": "Difference between visibility and display none",
+    "description": "visibility:hidden - The element is not visible but still occupies space. display:none - The element is completely hidden and doesn't take up any space."
+  },
+  {
+    "title": "Difference between rem and em unit",
+    "description": "Both rem and em are scalable and relative units of size. However, em is relative to the font size of its parent element, while rem is only relative to the root font size of the HTML document. The 'r' in rem stands for 'root'."
+},
+{
+  "title": "CSS Position",
+  "description": "CSS Position: Static is the default position of HTML elements. Relative positioning moves an element relative to its normal position using top, bottom, left, and right. Fixed positioning fixes an element to the viewport, ignoring scrolling. Absolute positioning positions an element relative to its nearest positioned ancestor or the viewport if there's no positioned ancestor. You can use top, bottom, left, and right to adjust the position of relative, fixed, and absolute elements."
+},
+{
+  "title": "CSS Padding",
+  "description": "Padding sets the space between the content and the border of an element. It can be set for all four sides (top, right, bottom, left) or for individual sides. For example, `padding: 25px 50px 75px 100px;` sets top, right, bottom, and left padding respectively. `padding: 25px 50px;` sets top and bottom padding to 25px, and right and left padding to 50px. `padding: 25px;` sets all four sides to 25px."
+},
+{
+  "title": "Pseudo-classes",
+  "description": "Pseudo-classes like :link, :visited, :hover, :active, and :focus can be combined with HTML classes to style elements based on their state. For example, `a.highlight:hover` will style the highlighted link when hovered."
+}]
