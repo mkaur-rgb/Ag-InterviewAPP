@@ -41,21 +41,21 @@ export class AppComponent {
   isDarkTheme = false;
   private darkThemeClass = 'dark-theme';
   form: any;
+  isShown: false | undefined;
   constructor(private injector: Injector) {}
   isSubmitted = false;
   selectedData: { language: string; topic: string } = {
     language: '',
     topic: '',
   };
+  ngOninit() {
+    isShown: false;
+  }
   receiveData(data: { language: string; topic: string }) {
     try {
-      this.selectedData = data;
       debugger;
+      this.selectedData = data;
       this.isSubmitted = true;
-      console.log(
-        this.selectedData.language,
-        this.selectedData.topic + ' . Received value'
-      );
     } catch (error) {
       console.error('Error receiving data:', error);
     }

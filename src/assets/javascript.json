@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Get count of duplicate elements with their count",
+    "description": "This code snippet demonstrates how to count the occurrences of each element in an array. It iterates through the array, incrementing a counter for each element in a hash map. The final output is a hash map where the keys are the unique elements and the values are their respective counts."
+},
+  {
+    "title": "How to write function which invokes like multiply(2)(3)?",
+    "description": "function multiply(num1){\n    return function(num2) {\n        console.log(num1*num2);\n    }\n}"
+  },
+  {
+    "title": "check if string is palindrome",
+    "description": "const name= \"aabbaa\";\nconst lower = name.toLowerCase();\nconst strSplit = lower.split('');\nconst strReverse = strSplit.reverse();\nconst strJoin = strReverse.join('');\nif(strJoin == lower) {\n    alert('palindrome')\n} else {\n    alert('not palindrome')\n}"
+},
+  {
+    "title": "What are the new features introduced in ES6?",
+    "description": "Let and const keywords, Default Parameters, Arrow functions, Template Literals, Object Literals, Rest and spread operators, Destructuring assignment, Modules, Classes, Generators, and iterators, Promises, and many more."
+},
+  {
+    "title": "How to empty an Array in JavaScript",
+    "description": "arrayList = []\nalrayList.length = 0;\nalrayList.splice(0, arrayList.length);\nwhile(arrayList.length) arrayList.pop();"
+  },
+  {
+    "title": "Difference ways an HTML element can be accessed in a JavaScript code",
+    "description": "getElementById(‘idname’): Gets an element by its ID name\ngetElementsByClass(‘classname’): Gets all the elements that have the given classname.\ngetElementsByTagName(‘tagname’): Gets all the elements that have the given tag name.\nquerySelector(): This function takes css style selector and returns the first selected element."
+},
+  {
+    "title": "What is TypeScript",
+    "description": "TypeScript is a typed superset of JavaScript created by Microsoft that adds optional types, classes, async/await, and many other features, compiling to plain JavaScript. Angular is built entirely in TypeScript and uses it as a primary language."
+}
+]

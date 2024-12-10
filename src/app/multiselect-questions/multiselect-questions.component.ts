@@ -4,6 +4,8 @@ import { Observable, from, of } from 'rxjs';
 import { topicsByLanguage } from '../../assets/topicsData';
 import { CommonModule } from '@angular/common';
 import { QuestionsComponent } from '../questions/questions.component';
+import { CommonService } from '../../assets/shared/services/common.service';
+import { SharedModule } from '../shared/shared.module';
 interface Question {
   title: string;
   description: string;
@@ -18,11 +20,17 @@ export interface Language {
 @Component({
   selector: 'app-multiselect-questions',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule, QuestionsComponent],
+  imports: [
+    ReactiveFormsModule,
+    CommonModule,
+    QuestionsComponent,
+    SharedModule,
+  ],
   templateUrl: './multiselect-questions.component.html',
   styleUrl: './multiselect-questions.component.scss',
 })
 export class MultiselectQuestionsComponent {
+  isSubmitted = false;
   form;
   questions: Question[] = [];
   language = '';
@@ -30,7 +38,7 @@ export class MultiselectQuestionsComponent {
   filePath = '';
   topics$: Observable<Language[] | null>;
   @Output() dataEvent = new EventEmitter<{ language: string; topic: string }>();
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private commonService: CommonService) {
     this.form = this.fb.group({
       language: this.fb.control<string | null>(null, Validators.required),
       topic: this.fb.control<string | null>(null, Validators.required),
@@ -51,7 +59,6 @@ export class MultiselectQuestionsComponent {
 
   submit() {
     if (this.form.valid) {
-      debugger;
       const language = this.form.value.language;
       const topic = this.form.value.topic;
       const storeLanguage = `${
@@ -69,9 +76,12 @@ export class MultiselectQuestionsComponent {
   clearForm() {
     this.form.reset();
     localStorage.removeItem('language');
+    localStorage.removeItem('topic');
+    this.isSubmitted = false;
     this.form.patchValue({
       language: null,
       topic: null,
     });
+    this.commonService.emitClearButtonClicked();
   }
 }
