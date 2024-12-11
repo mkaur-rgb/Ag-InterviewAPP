@@ -10,7 +10,6 @@ export class CommonService {
 
   constructor() {}
   emitClearButtonClicked() {
-    debugger;
     this.clearButtonClickedSource.next(true);
   }
 }

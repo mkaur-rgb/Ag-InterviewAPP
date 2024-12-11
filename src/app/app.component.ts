@@ -7,6 +7,7 @@ import { MultiselectQuestionsComponent } from './multiselect-questions/multisele
 import { MultiselectComponent } from './multiselect-language-topic/multiselect-language-topic.component';
 import { QuestionCountComponent } from './question-count/question-count.component';
 import { QuestionsComponent } from './questions/questions.component';
+import { routes } from './app.routes';
 
 @Component({
   selector: 'app-root',
@@ -53,7 +54,6 @@ export class AppComponent {
   }
   receiveData(data: { language: string; topic: string }) {
     try {
-      debugger;
       this.selectedData = data;
       this.isSubmitted = true;
     } catch (error) {

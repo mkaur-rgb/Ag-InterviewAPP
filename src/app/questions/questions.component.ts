@@ -28,11 +28,9 @@ export class QuestionsComponent {
   };
   constructor(private http: HttpClient, private commonService: CommonService) {}
   ngOnInit() {
-    debugger;
     this.fetchData();
     this.commonService.clearButtonClicked$.subscribe((clear) => {
       if (clear) {
-        debugger;
         this.isShown = false; // Add a flag to control visibility
         console.log(this.isShown + 'question comp');
       }
@@ -40,14 +38,11 @@ export class QuestionsComponent {
   }
 
   ngOnChanges(changes: SimpleChanges) {
-    debugger;
     if (changes['selectedData'] && !changes['selectedData'].firstChange) {
       this.fetchData();
     }
   }
   fetchData() {
-    debugger;
-
     this.isShown = true;
     const filePath = `assets/${this.selectedData.language.toLowerCase()}.json`;
     console.log(filePath);
