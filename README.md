@@ -2,6 +2,8 @@
 This project is still IN PROGRESS !!!!
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
+Also have Implemented Signals in this application to dynamically set Theme from light to dark and vice and versa.
+
 
 ## Development server
 
