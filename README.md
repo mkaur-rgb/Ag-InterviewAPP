@@ -1,8 +1,9 @@
 # AgInterviewAPP 
 WIP 
-(This project also contains Signals implementation for a small feature)
+(This project also contains Signals implementation for a small feature) Implemented Signals in this application to dynamically set Theme from light to dark and vice and versa.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
-Also have Implemented Signals in this application to dynamically set Theme from light to dark and vice and versa.
+
 
 
 ## Development server
